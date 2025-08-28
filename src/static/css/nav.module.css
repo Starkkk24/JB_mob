@@ -254,13 +254,13 @@ header{
     }
     
     .nav_links .nav_logo img {
-        width: 35px;
-        height: 35px;
+        width: 55px;
+        height: 50px;
     }
     
     .nav_links ul li {
         font-size: 1.2rem;
-        padding: 0.75rem 0.5rem;
+        padding: 0.45rem 0.5rem;
         text-align: center;
         border-radius: 0.5rem;
     }
@@ -268,11 +268,12 @@ header{
     .nav_links ul li i {
         font-size: 1.8rem;
     }
-    
-    /* Hide logo on mobile to save space */
-    .nav_logo {
-        display: none;
+
+        .nav_links ul li span {
+        
+        font-size: 0.75rem;
     }
+
     
     /* Adjust nav_down for mobile */
     .nav_down {

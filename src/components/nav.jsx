@@ -2,6 +2,7 @@ import styles from '../static/css/nav.module.css';
 import logo from '../static/img/logo.png';
 import lg from '../static/img/lg.png';
 import stark from '../static/img/stark.png';
+
 import { Outlet, Link } from 'react-router-dom';
 
 const p_name = "Login / Signup"
@@ -14,13 +15,13 @@ function NavUp() {
     <nav className={styles.nav_up}>
       <div className={styles.nav_links}>
         <ul>
-          <Link to="/feeds"><li><i className="fa-solid fa-users"></i></li></Link>
-          <Link to='/clubs'><li><i className="fa-solid fa-puzzle-piece"></i></li></Link>
+          <Link to="/feeds"><li><i className="fa-solid fa-users"></i><span>Feed</span></li></Link>
+          <Link to='/clubs'><li><i className="fa-solid fa-puzzle-piece"></i><span>Clubs</span></li></Link>
           <div className={styles.nav_logo}>
             <Link to="/"><img src={logo} alt="logo" /></Link>
           </div>
-          <Link to='/login'><li><i className="fa-solid fa-right-to-bracket"></i></li></Link>
-          <Link to='/map'><li><i className="fa-solid fa-map"></i></li></Link>
+          <Link to='/map'><li><i className="fa-solid fa-map"></i><span>Map</span></li></Link>
+          <Link to='/login'><li><i className="fa-solid fa-right-to-bracket"></i><span>Login</span></li></Link>
         </ul>
       </div>
     </nav>
